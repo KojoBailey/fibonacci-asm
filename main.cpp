@@ -15,9 +15,7 @@ void test_fib(std::uint32_t index) {
 	if (res != expected_res) {
 		std::cerr << std::format("Index {}: Expected {} but got {}.\n", index, expected_res, res);
 		are_tests_successful = false;
-		return;
 	}
-	std::cout << std::format("Index {}: All good!\n", index);
 }
 
 void run_tests() {
