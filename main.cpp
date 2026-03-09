@@ -9,7 +9,8 @@ static const std::array<std::uint64_t, 7> expected_values = {0, 1, 1, 2, 3, 5, 8
 
 static bool are_tests_successful;
 
-void test_fib(std::uint32_t index) {
+void test_fib(std::uint32_t index)
+{
 	std::uint64_t expected_res = expected_values[index];
 	std::uint64_t res = fibonacci(index);
 	if (res != expected_res) {
@@ -18,7 +19,8 @@ void test_fib(std::uint32_t index) {
 	}
 }
 
-void run_tests() {
+void run_tests()
+{
 	are_tests_successful = true;
 
 	for (std::uint32_t i = 0; i < expected_values.size(); i++) {
@@ -30,7 +32,8 @@ void run_tests() {
 	}
 }
 
-int main(int argc, char* argv[]) {
+int main(int argc, char* argv[])
+{
 	run_tests();
 
 	if (argc < 2) {
