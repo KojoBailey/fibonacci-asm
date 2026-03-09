@@ -38,10 +38,6 @@ int main(int argc, char* argv[]) {
 	}
 
 	std::uint32_t index = std::stoi(argv[1]);
-
-	std::cout << "Calculating fibonacci sequence for index " << index << "..." << std::endl;
-
 	std::uint64_t res = fibonacci(index);
-
 	std::cout << "fib(" << index << ") = " << res;
 }
